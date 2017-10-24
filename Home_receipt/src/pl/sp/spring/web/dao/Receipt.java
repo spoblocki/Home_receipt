@@ -8,7 +8,7 @@ public class Receipt {
 	private double price;
 
 	public Receipt() {
-
+		System.out.println("Konstruktor");
 	}
 
 	public Receipt(String description, String company, String date, double price) {

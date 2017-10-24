@@ -26,12 +26,13 @@ public class ReceiptController {
 
 	@RequestMapping("/")
 	public String showHome(Model model) {
+		System.out.println("Jakis tam model");
 
 		List<Receipt> receipts = receiptsService.getCurrent();
 
 		model.addAttribute("receipts", receipts);
-		
-		//sysout
+
+		// sysout
 
 		return "home";
 	}

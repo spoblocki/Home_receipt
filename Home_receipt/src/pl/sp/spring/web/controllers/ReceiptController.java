@@ -30,6 +30,8 @@ public class ReceiptController {
 		List<Receipt> receipts = receiptsService.getCurrent();
 
 		model.addAttribute("receipts", receipts);
+		
+		//sysout
 
 		return "home";
 	}
